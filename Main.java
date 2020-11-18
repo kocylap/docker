@@ -18,12 +18,12 @@ public class Main {
             Statement stmt = conn.createStatement()) {
                 Class.forName("com.mysql.jdbc.Driver");
                 TimeUnit.SECONDS.sleep(10);
-                System.out.println("Connecting to database");
+                System.out.println("Connecting to database...");
                 stmt.executeUpdate("CREATE TABLE IF NOT EXISTS country (Id int, Name varchar(255), Continent varchar(255), Region varchar(255));");
                 int menu;
                 do
                 {
-                    System.out.println("1. Show all countries\n2. Insert country\n3. Edit country by ID\n4. Delete country by ID\n0. Press E to Exit");
+                    System.out.println("1. Show all countries\n2. Insert country\n3. Edit country by ID\n4. Delete country by ID\n0. Press 0 to Exit");
                     menu = in.nextInt();
                     switch (menu)
                     {
