@@ -7,7 +7,7 @@ public class Main {
     static final String DB_URL = "jdbc:mysql://Full_2020_86318:3306/world";
 
     static final String USER = "pkocyla";
-    static final String PASS = "root";
+    static final String PASS = "admin";
 
     static Scanner in = new Scanner(System.in);
     private static final String SELECT_ALL_ROWS = "SELECT Id, Name, Continent, Region FROM country";
